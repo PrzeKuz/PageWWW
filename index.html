@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html LANG="pl">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+  <meta name="Description" content="Różności z próżności" />
+  <meta name="Keywords" content="testy, teksty i inne " />
+  <meta name="Author" content="Jan Nowak" />
+  <title>Kto doleci?</title>
+
+  <link rel="stylesheet" href="layout.css">
+</head>
+<body onload="menu('Kto_to')">
+
+<header>
+<h1 style="color: blue" >Autorzy znani i lubiani</h1>
+</header>
+
+<section>
+<nav>
+<ul>
+<li onclick="menu('Kto_to')"> O mnie </li>
+<li onclick="menu('Raczej')"> Hobby </li>
+<li onclick="menu('Cm')"> Ciekawe miejsca </li>
+<li onclick="menu('Kontakt')"> Kontakt </li>
+</ul>
+</nav>
+
+<article>
+<div id="Kto_to" class="main">
+	<p></p>
+	<p> <h3 style="color: black" > Testy tekstów na stronach</h3></p>
+	<p></p>
+	<p>Gdy znów do murów klajstrem świeżym</p>
+	<p>Przylepiać zaczną obwieszczenia,</p>
+	<p>Gdy "do ludności", "do żołnierzy"</p>
+	<p> <h3 style="color: #027400" > Teraz 2 </h3></p>
+	<p> Nad Bałtykiem rozpostarli swoje skrzydła ludzie z Marsa</p>
+	<p>Atakować w taki sposób to jest jedna wielka farsa</p>
+	<p>Motłoch gapi się zdziwiony, nowej szuka podniety</p>
+	<p>Cywilizacyja wroga z innej planety</p>
+	<p>W Gdyni zbiera się pospiesznie sztab kryzysowy</p>
+	<p>Albo anty, ryba psuje się od głowy</p>
+	<p>A każdy z prawem tutaj jest na bakier</p>
+	<p>John Malkovich jak grał Ruska to mówił "madier fakier"</p>
+	<p>Inwazja planetarna do plaży się zbliża</p>
+	<p>W tym czasie w sztabie w Gdyni jeden drugim ubliżał</p>
+	<p>Co to był za film, co na nim wciąż się ruchali?</p>
+	<p>Tu za heroinę, panie, ludzie wszystko by oddali</p>
+	<p>Wszystkie deski obsikane, wszystkie kible osrane</p>
+	<p>Jaki piękny jest nasz port, gdy się go widzi nad ranem</p>
+	<p>Wszystko poukładane, dużo dobrej roboty</p>
+	<p>Do portu się zbliżają z Marsa istoty</p>
+ </div>
+ 
+  <div id="Raczej" class="main">
+    <p>	O jaskiniach	</p>
+	<img src="1.jpg"  height="400">
+	<p></p>
+	<p>Zebrach</p>
+	<img src="2.jpg"  height="400">
+	<p> <h2 style="color: red" > Teraz inny kolor dla pszczół </h2></p>
+	<img src="3.jpg"  height="400">
+	<p></p>	
+	<p></p>
+	<p></p>
+	<p></p>
+	<p></p>
+	<p></p>
+	<p></p>
+  </div>
+  
+  <div id="Cm" class="main">
+    <p></p>	
+	<p> <h3 style="color: #027400" > Wodospady przy jaskiniach</h3></p>
+	<img src="1.jpg"  height="800">
+	<p></p>
+	<p> <h3 style="color: white	" > Jakieś patyki</h3></p>
+	<img src="4.jpg"  height="800">	
+	<p></p>
+	<p></p>
+	<p></p>
+	</div>
+  
+  <div id="Kontakt" class="main">
+    <p> <h2 style="color: #114222" > Zapraszam do kontaktu </h2></p>
+    <form action="mailto:kuzdra@student.agh.edu.pl" method="post">
+      <input type="text" name="name" placeholder="Your name..">
+      <input type="text" name="whats up" placeholder="co słychać" >
+      <input type="submit" value="wyślij">
+    </form>
+	<p></p>
+	<p> <h3 style="color: black" > Zapewne wiadomość trafi do jaskini za wodospadem</h3></p>
+	<img src="1.jpg"  height="800">
+  </div>
+
+</article>
+</section>
+
+<footer>
+<p>@2022</p>
+<p>teksty m.in. K.Staszewski</p>
+<p>obrazy zaporzyczone z: https://pixabay.com/pl/</p>
+</footer>
+
+<script>
+  function menu(wybor){
+    var main = document.getElementsByClassName("main")
+
+    for (let m of main){
+      m.style.display = "none"
+    }
+    var wart = document.getElementById(wybor)
+    wart.style.display = "block"
+
+  }
+</script>
+	
+</body>
+</html>
